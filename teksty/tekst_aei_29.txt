@@ -1,0 +1,58 @@
+﻿Dźwięk w kosmosie
+W kosmosie nikt nie usłyszy Twojego krzyku. Być może słyszeliście to stwierdzenie, kojarzące się ze słynnym filmem science fiction „Obcy” z 1979 roku, a także będące podtytułem związanej z nim książki Alana Deana Fostera. To przerażająca myśl, ale czy prawdziwa? Prosta odpowiedź brzmiałaby: tak, dźwięk Twojego krzyku umilknie w kosmicznej próżni. Gdy jednak zadamy pytanie o dźwięk w kosmosie w szerszym znaczeniu, odpowiedź (jak zwykle) jest o wiele bardziej interesująca niż proste „tak” albo „nie”. 
+
+
+Jak działa dźwięk?
+
+
+dźwiękAby zrozumieć, dlaczego w kosmosie zasadniczo nie ma dźwięku, najpierw zastanówmy się, jak to w ogóle działa. Dźwięk to fala energii rozchodząca się w ciele stałym, cieczy lub gazie. Dźwięk jest falą kompresyjną. Klasyczny głośnik wytwarza dźwięk poprzez zakłócanie otaczających cząsteczek powietrza podczas wibracji membrany. Ciągłe wibracje generują serię kompresji (kiedy cząsteczki powietrza są ściślej upakowane) i rozrzedzeń (kiedy cząsteczki powietrza są rozproszone). Te kompresje i rozrzedzenia nieustannie przemieszczają się wzdłuż ośrodka, aż dotrą do ludzkich uszu, gdzie są przekształcane na sygnały nerwowe i interpretowane przez mózg jako fale dźwiękowe. Zakres słyszalności człowieka mieści się w przedziale od około 20 Hz do około 20 kHz.
+
+
+W przypadku ludzkiego głosu, energia powstająca, gdy struny głosowe lekko wibrują, ściska powietrze w gardle, a skompresowana energia przemieszcza się na zewnątrz. Dźwięk przemieszcza się w powietrzu w taki sam sposób, w jaki przechodzi przez gardło. Cząsteczki powietrza w pobliżu ust zderzają się z sąsiednimi, które z kolei wpadają na kolejne, a dźwięk porusza się w powietrzu. Fala dźwiękowa przemieszcza się szybko – w powietrzu, w temperaturze 15° z prędkością około 340,3 m/s (1225 km/h), czyli szybciej niż komercyjny odrzutowiec, a w ciałach stałych nawet wielokrotnie szybciej.
+
+
+Kosmiczna próżnia
+
+
+Kosmiczna przestrzeń wypełniona jest próżnią, co oznacza, że nie zawiera niemal żadnej materii. Dźwięk przenoszony przez atomy i cząsteczki, nie może rozprzestrzeniać się w doskonałej próżni – prawdziwie pustej pustce, w której nie ma niczego. Brak dźwięku oznacza również brak echa. Echo ma miejsce, gdy fala dźwiękowa uderza w twardą, płaską powierzchnię i odbija się w kierunku, z którego przyszła. Błędne przekonanie o hałaśliwym kosmosie istnieje w dużej mierze dzięki kulturze popularnej. Filmy i seriale telewizyjne często przedstawiają naturalne zjawiska czy bitwy kosmiczne z dźwiękami wystrzałów i wybuchów, analogicznymi do tych spotykanych na naszej planecie, ale w rzeczywistości kosmos jest niesamowicie cichy.
+
+
+W ostatnich latach dwa wielkie hity kinowe przedstawiły dźwięk w przestrzeni kosmicznej z fizyczną dokładnością. W Grawitacji Alfonso Cuaróna (2013)  słyszymy w hełmach bohaterów wszystko, co byśmy słyszeli, gdybyśmy byli rzeczywiście na ich miejscu. Jednak kiedy wahadłowiec Explorer rozpada się na kawałki, widzimy to, ale nie słyszymy. Podobny kierunek stylistyczny obrał reżyser Christopher Nolan i ekipa dźwiękowa filmu Interstellar (2014). Chociaż jest to duża hollywoodzka produkcja, jej ścieżka dźwiękowa cichnie zupełnie, gdy przechodzi do ujęć zewnętrznych w kosmosie, wypełniając niektóre luki pięknymi kompozycjami Hansa Zimmera. Starszymi produkcjami z poprawnym brakiem dźwięku w przestrzeni kosmicznej, są m.in. Kontakt, Apollo 13 czy 2001: Odyseja kosmiczna.
+
+
+Dźwięki na innych planetach
+
+
+Zakładając na chwilę, że moglibyśmy przetrwać piekielne temperatury, kwasowe warunki lub niesamowite ciśnienia, otrzymujemy szeroką gamę miejsc w Układzie Słonecznym, gdzie moglibyśmy się udać i znaleźć pozaziemskie dźwięki. Wszystkie planety (z wyjątkiem Merkurego) i księżyc Saturna Tytan posiadają atmosferę. Jeśli weźmiemy pod uwagę same planety-olbrzymy, Uran i Neptun będą miały mniejszą prędkość dźwięku niż Saturn i Jowisz. To dlatego, że są zimniejsze. Naukowcy uważają, że wyposażenie sondy w mikrofon i wysłanie jej na planety może zapewnić interesujący wgląd w różne warstwy ze względu na zmiany prędkości dźwięku. Żadna taka misja nie jest jednak planowana, ale na planetach skalistych zastosowano już mikrofony.
+
+
+Radzieckie misje Wenera 13 i 14 posiadały instrumenty do pomiaru fal dźwiękowych na Wenus na początku lat 80. XX wieku, co umożliwiło pomiar prędkości wiatru na planecie. Łazik marsjański Perseverance należący do NASA także jest wyposażony w mikrofon, który służy do pomiaru dźwięku jego laserów, a nawet pierwszego w historii dźwięku wydawanego przez pozaziemski wir pyłowy. Dzięki temu instrumentowi naukowcom udało się oszacować prędkość dźwięku na Marsie, która jest średnio nieco niższa niż na Ziemi. Dźwięki poruszają się tam z prędkością około 240 metrów na sekundę.
+Naukowcy zastanawiali się, jak brzmiałyby ludzkie głosy na naszych najbliższych sąsiadujących planetach – Wenus i Marsie. Ten eksperyment jest całkowicie hipotetyczny, ponieważ na Marsie zwykle panuje temperatura poniżej zera, a jego atmosfera składa się z rzadkiego dwutlenku węgla, który nie nadaje się do oddychania. Na Wenus jest jeszcze gorzej – jej atmosfera złożona głównie z dwutlenku węgla jest wystarczająco gorąca, aby stopić ołów.
+
+
+Na Wenus wysokość Twojego głosu byłaby znacznie mniejsza, niczym dźwięk dudniącej gitary basowej. Jednak znacznie większa prędkość rozchodzenia się dźwięku sprawi, że Twój głos stanie się ostatecznie bardziej „piskliwy”. Na Marsie twój głos brzmiałby „blaszanie”, ale rozbieżność między dźwiękami na Ziemi i na Marsie byłaby znacznie mniej dramatyczna niż na przykład Twój głos przed i po wdychaniu helu z balonu. Jednak skład marsjańskiej atmosfery powoduje, że niektóre częstotliwości, szczególnie te wyższe, są absorbowane szybciej i nie rozchodzą się na dłuższe odległości. Jeśli miałbyś prowadzić rozmowę na Marsie bez pomocy sprzętu komunikacyjnego, musiałbyś być bardzo blisko rozmówcy, aby go wyraźnie usłyszeć.
+
+
+Sonifikacja kosmicznych fal
+
+
+Pomimo kosmicznej ciszy, róże kosmiczne agencje i instytuty badawcze udostępniają czasem filmy i nagrania oznaczone jako „dźwięki z kosmosu”. Nie są to dźwięki w tradycyjnym rozumieniu, ale mamy do czynienia z produktami procesu zwanego sonifikacją. Sonifikacja to elektroniczne przetwarzanie dowolnego rodzaju fali lub oscylacji, skalowanie ich do słyszalnych częstotliwości, a następnie przekształcanie ich w falę dźwiękową, często z wyraźnie przerażającymi wynikami. Kiedy naukowcy przedstawiają dane w takim słyszalnym formacie, ułatwia to wykrycie pewnych wzorców i anomalii. Na przykład niesamowite „gwizdy” i „wycie” z nagrań Jowisza lub Saturna nie są dźwiękami, które astronauta mógłby usłyszeć. Są to sonifikacje fal radiowych lub innych zjawisk elektromagnetycznych wykrytych przez aparaturę sond kosmicznych badających te planety.
+Jeden z najbardziej znanych przykładów takiej procedury pochodzi z misji Rosetta Europejskiej Agencji Kosmicznej (ESA), badającej kometę 67P/Churyumov-Gerasimenko. Według ESA ta szczególna sonifikacja, wyemitowana w listopadzie 2014 roku, opierała się na oscylacjach o niskiej częstotliwości w polu magnetycznym komety, które następnie „powiększono” 10.000 razy, aby były słyszalne. Klip nazwany „Śpiewającą Kometą” (odtwarzacz powyżej) stał się internetowym hitem i odtworzony został ponad 6 milionów razy po opublikowaniu go w serwisie SoundCloud.
+
+
+Fale grawitacyjne: rodzaj „dźwięku” w kosmosie
+
+
+Przełomowe odkrycie fal grawitacyjnych dodaje nową warstwę do naszego zrozumienia „dźwięków” w przestrzeni kosmicznej. Wykryte przez Laserowe Interferometryczne Obserwatorium Fal Grawitacyjnych (LIGO), są to zmarszczki w czasoprzestrzeni spowodowane zdarzeniami kataklizmicznymi, takimi jak łączenie się dwóch czarnych dziur.
+
+
+Fale grawitacyjne nie są dźwiękami w tradycyjnym znaczeniu. Nie rozprzestrzeniają się przez materię, ale dosłownie rozciągają i ściskają „tkankę” wszechświata. Jednak podobnie jak w przypadku wspomnianej wcześniej sonifikacji, naukowcy często przekształcają dane dotyczące fal grawitacyjnych na dźwięk. Kiedy naukowcy z LIGO to robią, wyniki są zdumiewające. Ostatnie momenty spiralnego wchodzenia dwóch czarnych dziur w siebie można „usłyszeć” jako ćwierkanie. W tym kontekście fale grawitacyjne przypominają symfonię wszechświata, świadectwo kolosalnych wydarzeń mających miejsce w kosmosie.
+
+
+Dźwięki głębokiego kosmosu
+
+
+Chociaż przestrzeń kosmiczna na tyle spełnia definicję próżni, że normalny dźwięk nie może się przez nią przedostać, w rzeczywistości nie jest to próżnia idealna i unoszą się w niej pewne cząsteczki. Poza Ziemią i jej atmosferą w typowym centymetrze sześciennym, czyli objętości kostki cukru znajduje się pięć cząstek, które składają się głównie z atomów wodoru. Dla porównania, powietrze, którym oddychasz jest 10 miliardów miliardów (1019) razy gęstsze. Gęstość maleje wraz z odległością od Słońca i w przestrzeni międzygwiezdnej na centymetr sześcienny przypada 0,1 cząsteczki. W rozległych pustkach pomiędzy galaktykami jest jeszcze mniej. Jednak niektóre miejsca w kosmosie są bardzo gorące dzięki promieniowaniu gwiazd. Znaleziona tam bardzo rozproszona materia znajduje się w stanie fizycznym zwanym plazmą. Plazma to gaz, w którym elektrony są oddzielone od protonów. W plazmie fizyka fal dźwiękowych staje się skomplikowana. W tym ośrodku fale przemieszczają się znacznie szybciej, a ich długość jest znacznie większa.
+
+
+W 2022 roku NASA opublikowała spektakularny przykład dźwięku w kosmosie. Wykorzystał dane rentgenowskie do wykonania słyszalnego nagrania przedstawiającego sposób, w jaki masywna czarna dziura wzbudza plazmę w Gromadzie galaktyk w Perseuszu (Abell 426), 250 milionów lat świetlnych od Ziemi. Sama czarna dziura nie emituje dźwięku, ale rozproszona plazma wokół niej niesie dźwięk o bardzo długich falach. Taki dźwięk ma o wiele za niską częstotliwość, aby ludzkie ucho mogło je usłyszeć, 57 oktaw poniżej środkowego C, czyli środkowej nuty w fortepianie i znajdującego się w środku zakresu dźwięków, które ludzie słyszą. Najniższy dźwięk, jaki człowiek może usłyszeć, ma częstotliwość około 1/20 sekundy, natomiast czarna dziura w Perseuszu generuje falę dźwiękową o częstotliwości 10 milionów lat Jednak po podniesieniu częstotliwości do zakresu słyszalnego efekt jest przerażający – to dźwięk czarnej dziury warczącej w głębokim kosmosie. Zresztą posłuchajcie sami:

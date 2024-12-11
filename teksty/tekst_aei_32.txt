@@ -1,0 +1,41 @@
+﻿Jak powstają spajki?
+Spajki (szpilki, kolce) dyfrakcyjne, tak dobrze nam znane z wielu zdjęć nocnego nieba, są nieodłączną właściwością wielu teleskopów i obiektywów. Są to artefakty spowodowane dyfrakcją światła wokół mechanicznych elementów, towarzyszących układom optycznym, a ich obecność wokół jasnych gwiazd ma wielu zwolenników i prawdopodonie równie wielu przeciwników. Nawet patrząc gołym okiem, możemy je dostrzeć. Dyfrakcja światła przez nasze rzęsy, czy na krawędziach powiek (warto sprawdzić samodzielnie, mrużąc oczy), może wytwarzyć wiele kolców dyfrakcyjnych o różnym rozmieszczeniu. 
+
+
+WINA PAJĄKA
+
+
+Popularne teleskopy lustrzane mają zwykle dwa zwierciadła: duże główne i mniejsze wtórne. Światło pod odbiciu od lustra głównego, zostaje skierowane do lustra wtórnego, które odbija je w kierunku wyciągu z okularem bądź kamerą. Niewielkie lustro wtórne jest często (choć nie zawsze) utrzymywane na miejscu przez cienkie metalowe rozpórki (zwane potocznie pająkiem), które to są w dużej mierze przyczyną kolców dyfrakcyjnych. Gdy fale światła ulegają dyfrakcji (lekko wyginają się) wokół krawędzi pająka, zaczynają nakładać się na siebie, tworząc charakterystyczny wzór. Na przykład, na zdjęciach z Kosmicznego Teleskopu Hubble’a zazwyczaj widzimy cztery „kolce” ustawione względem siebie pod kątem prostym, ponieważ Teleskop Hubble’a posiada cztery metalowe ramiona utrzymujące lustro wtórne na miejscu. W zależności od liczby i orientacji ramion „pająka”, można uzyskać kilka podstawowych kształtów kolców dyfrakcyjnych (jak na grafice poniżej).
+
+
+Chociaż spajki mogą przesłaniać część fotografii i są niepożądane w kontekście zawodowym, niektórzy astronomowie-amatorzy lubią efekt wizualny, jaki dają jasnym gwiazdom. Niektórzy nawet modyfikują swoje refraktory, aby generowały ten sam efekt. Wszystkie punktowe źródła światła (jak gwiazdy) tworzą kolce dyfrakcyjne, ale ich wielkość będzie siłą rzeczy wprost proporcjonalna do „mocy” źródła, dlatego spajki wydają się oczywiste wokół najjaśniejszych gwiazd, ale stają się niemal niezauważalne w przypadku tych najsłabszych. 
+
+
+Niewielka liczba konstrukcji teleskopów opartych wyłącznie na zwierciadłach, pozwala uniknąć tworzenia się kolców, umieszczając zwierciadło wtórne poza osią optyczną. Wczesne konstrukcje pozaosiowe, takie jak teleskopy Herschela i Schiefspieglera mają jednak poważne ograniczenia, takie jak astygmatyzm i długie ogniskowe, co czyni je problamtycznymi w większości zastosowań. Teleskopy soczewkowe (refrakcyjne) i ich obrazy ze swej natury (brak koniecznych podpór elementu optycznego w polu widzenia) pozbawione są tego zjawiska.
+
+
+KANCIASTA DIAFRAGMA
+
+
+Stosowana w obiektywach fotograficznych (w celu regulacji ilości wpadającego światła) przysłona zwykle ma postać nachodzących na siebie metalowych listków. Liczba listków przysłony i ich kształt oraz stopień otwarcia samej przysłony, mają wpływ na powstawanie kolców. Producenci obiektywów starają się, aby przysłona była możliwie okrągła, aby uzyskać przyjemny efekt bokeh, jednak po przymknięciu do wysokich wartości „f” (mały otwór) jej kształt zmierza w kierunku wielokąta o takiej samej liczbie boków, jak ilość listków. Dyfrakcja rozprasza fale świetlne przechodzące przez otwór, przy czym każda krawędź generuje dwa kolce oddalone od siebie o 180°. Ponieważ listki są równomiernie rozmieszczone wokół, na diafragmie z ich parzystą liczbą, kolce dyfrakcyjne z listków po przeciwnych stronach nachodzą na siebie. W konsekwencji diafragma z n krawędzami daje n  kolców, jeśli n  jest parzyste, i 2n  kolców, jeśli n  jest nieparzyste.
+
+
+SEGMENTOWE LUSTRA
+
+
+Obrazy z teleskopów, których lustra główne składają się z mniejszych segmentów, również generują spajki, spowodowane dyfrakcją na krawędziach zwierciadeł składowych. Znakomitym przykładem jest Kosmiczny Teleskop Jamesa Webba (JWST), którego obrazy posiadają sześć dużych kolców i dwa mniejsze. 
+
+
+Tutaj sprawy stają się nieco bardziej skomplikowane. Pająk JWST ma tylko trzy ramiona, ale w tym przypadku nie tylko one załamują wpadające światło; podobnie dzieje się na krawędziach 18 sześciokątnych segmentów głównego lustra teleskopu. Widzimy tutaj zjawisko podobne do wyżej opisanego w przypadku przysłony obiektywu fotograficznego. Konstrukcja teleskopu Webba jest taka, że kolce z luster i spajki z dwóch ramion nakładają się na siebie, tworząc sześć większych kolców. Dwa małe poziome kolce pochodzą z trzeciego ramienia pająka. Główne zwierciadło Teleskopu Hubble’a nie wywołuje tego samego efektu, ponieważ jest pojedynczym okrągłym kawałkiem szkła.
+
+
+MASKA BAHTINOVA
+
+
+W astrofotografii amatorskiej maska Bahtinova, umieszczona przed obiektywem teleskopu, może być używana do dokładnego ogniskowania teleskopów astronomicznych. Chociaż tego typu maski były od dawna używane jako pomocne w ustawianiu ostrości, charakterystyczny wzór został zaprojektowany przez rosyjskiego astrofotografa-amatora Pavla Bahtinova (Павел Бахтинов) w 2005 roku. 
+
+
+Maska działa poprzez zastąpienie diafragmy apertury układu optycznego (zwykle okrągłego kształtu samego obiektywu) ogranicznikiem, który jest asymetryczny i okresowy. Obraz źródła punktowego (takiego jak gwiazda) tworzy wzór dyfrakcyjny na płaszczyźnie ogniskowej reprezentujący transformację dyfrakcyjną Fraunhofera kształtu apertury. Ten wzór normalnie byłby krążkiem Airy’ego wynikającym z okrągłej apertury, ale przy założonej masce wzór wykazuje asymetryczne spajki. Bardzo jasna gwiazda i bardzo ciemne niebo są potrzebne do wytworzenia silnie kontrastowych kolców, które są wyraźnie widoczne. 
+
+
+Maska składa się z trzech oddzielnych siatek, rozmieszczonych w taki sposób, że wytwarzają one trzy ustawione pod kątem kolce dyfrakcyjne na płaszczyźnie ogniskowej instrumentu dla każdego jasnego elementu obrazu. Gdy zmienia się ostrość instrumentu, centralny kolec wydaje się przesuwać z jednej strony gwiazdy na drugą. W rzeczywistości wszystkie trzy kolce poruszają się, ale środkowy kolec porusza się w kierunku przeciwnym do dwóch kolców tworzących „X”. Optymalną ostrość uzyskuje się, gdy środkowy kolec jest wyśrodkowany między dwoma pozostałymi kolcami. Małe odchylenia od optymalnej ostrości są łatwo dostrzegalne. W przypadku astrofotografii, obraz cyfrowy można analizować za pomocą specjalnego oprogramowania w celu uzyskania idealnej ostrości.
