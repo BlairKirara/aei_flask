@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
 
-<head>
-    <title>Hello World</title>
-</head>
-
-<body>
-    <h1>Hello, World!</h1>
-</body>
-
-</html>
+{% block content %}
+    <div class="introduction">
+        <h2>Witaj na stronie głównej!</h2>
+        <p>Projekt ten został stworzony przez Zuzannę Kwaśny w ramach przedmiotu Automatyczna Ekstrakcja Informacji. Ma on na celu analizę tekstów w celu ustalenia ich zgodności z wcześniej wybraną tematyką wojny zimowej. 50 ze zgromadzonych tekstów dotyczy losowych tematów, a 50 wybranego. Serwis udostępnia listę tekstów oraz wyniki ich analizy.</p>
+    </div>
+{% endblock %}

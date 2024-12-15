@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hello World</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="page">
+        <div class="title_div">
+            <h1><a href="/"> Klasyfikacja tekstów - AEI </a></h1>
+        </div>
+        <div class="nav_bar">
+            <ul>
+                <li><a href="teksty">Teksty</a></li>
+            </ul>
+            <ul>
+                <li><a href="formularz">Formularz</a></li>
+            </ul>
+            <ul>
+                <li><a href="tabela_wag">Tabela wag</a></li>
+            </ul>
+            <ul>
+                <li><a href="lista_frekwencyjna">Frekwencja</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </div>
+</body>
+
+</html>
