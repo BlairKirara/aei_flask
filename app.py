@@ -1,4 +1,5 @@
 import os
+from tfidf import oblicz_tfidf
 from flask import Flask, render_template
 
 #Flask instance
@@ -37,7 +38,10 @@ def wagi():
 
 @app.route('/lista_frekwencyjna')
 def frekwencja():
-    return render_template('frekwencja.html')
+    folder_tekstów = "teksty"
+    wzorzec_pliku = r"(tekst_aei_\d+|wojna_zimowa_\d+)\.txt"
+    wyniki_tfidf = oblicz_tfidf(folder_tekstów, wzorzec_pliku)
+    return render_template('frekwencja.html', wyniki=wyniki_tfidf)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=12121, debug=True)

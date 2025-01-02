@@ -105,3 +105,60 @@ p {
     background-color: #2d61a6;
 }
 
+.tfidf-table {
+    margin: 20px auto;
+    border: 2px solid #275d8c;
+    border-collapse: collapse;
+    width: 90%;
+    font-size: 16px;
+    background-color: #ffffff;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tfidf-table th {
+    background-color: #275d8c;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+    border: 1px solid #ccc;
+}
+
+.tfidf-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ccc;
+    color: #333333;
+    vertical-align: top;
+}
+
+.tfidf-table tbody tr:nth-child(even) {
+    background-color: #f3f6fa;
+}
+
+.tfidf-table tbody tr:hover {
+    background-color: #e9eef4;
+}
+
+.tfidf-table caption {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #275d8c;
+}
+
+.tfidf-table .result-row span {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #275d8c;
+    font-weight: 500;
+}
+
+.tfidf-table .result-row span:last-child {
+    margin-right: 0;
+}
+
+
+
+

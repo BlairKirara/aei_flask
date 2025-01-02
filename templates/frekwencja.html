@@ -1,5 +1,25 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+    <table class="tfidf-table">
+        <caption>Top Słowa z Analizy TF-IDF</caption>
+        <thead>
+            <tr>
+                <th>Dokument</th>
+                <th>Top Słowa</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for wynik in wyniki %}
+            <tr>
+                <td>{{ wynik.nazwa }}</td>
+                <td class="result-row">
+                    {% for słowo, wartość in wynik.top_słowa %}
+                    <span>{{ słowo }} ({{ "%.4f"|format(wartość) }}){% if not loop.last %}, {% endif %}</span>
+                    {% endfor %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 {% endblock %}
