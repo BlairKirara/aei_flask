@@ -1,4 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <div class="text-list">
+        {% for text in texts %}
+        <div class="text-block">
+            <h3>{{ text.title }}</h3>
+            <p class="short-text">{{ text.content[:200] }}...</p>
+            <p class="full-text" style="display: none;">{{  text.content }}</p>
+            <button class="toggle-button">Czytaj więcej</button>
+            <div class="roles">
+                <p><strong>Sprawca:</strong> [miejsce na rolę]</p>
+                <p><strong>Zdarzenie:</strong> [miejsce na rolę]</p>
+                <p><strong>Obiekt:</strong> [miejsce na rolę]</p>
+                <p><strong>Narzędzie:</strong> [miejsce na rolę]</p>
+                <p><strong>Miejsce:</strong> [miejsce na rolę]</p>
+                <p><strong>Cel:</strong> [miejsce na rolę]</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 {% endblock %}

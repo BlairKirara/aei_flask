@@ -54,12 +54,10 @@
 }
 
 .content div{
-    background-color: #a7ddf2;
     color: #333333;
     font-size: 18px;
     padding: 20px 50px;
     margin: 20px;
-    box-shadow: 1px 10px 5px rgb(177, 177, 177);
 }
 
 .content div h2 {
@@ -75,3 +73,35 @@ p {
     margin-bottom: 10px;
     font-size: 16px; 
 }
+
+.roles p {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2d61a6;
+}
+
+.roles, .introduction, .text-block {
+    background-color: #a7ddf2;
+}
+
+.text-block, .introduction {
+    box-shadow: 1px 10px 5px rgb(177, 177, 177);
+}
+
+.toggle-button {
+    background-color: #275d8c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #2d61a6;
+}
+

@@ -1,7 +1,22 @@
+import os
 from flask import Flask, render_template
 
 #Flask instance
 app = Flask(__name__)
+
+def load_texts(folder_path):
+    texts = []
+    for idx, filename in enumerate(os.listdir(folder_path)):
+        if filename.endswith(".txt"):
+            file_path = os.path.join(folder_path, filename)
+            with open(file_path, "r", encoding="utf-8") as f:
+                texts.append({
+                    'title': f'Tekst {idx + 1}',
+                    'content': f.read()
+                })
+    return texts
+
+TEXT_FOLDER = 'teksty'
 
 @app.route('/')
 def index():
@@ -9,7 +24,8 @@ def index():
 
 @app.route('/teksty')
 def teksty():
-    return render_template('teksty.html')
+    texts = load_texts(TEXT_FOLDER)
+    return render_template('teksty.html', texts=texts)
 
 @app.route('/formularz')
 def formularz():
