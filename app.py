@@ -1,6 +1,7 @@
 import os
 from tfidf import oblicz_tfidf
-from flask import Flask, render_template
+from frekwencja import generate_frekwencja
+from flask import Flask, render_template, request
 
 #Flask instance
 app = Flask(__name__)
@@ -36,12 +37,42 @@ def formularz():
 def wagi():
     return render_template('wagi.html')
 
-@app.route('/lista_frekwencyjna')
-def frekwencja():
+
+def paginate(items, page, per_page=10):
+    start = (page - 1) * per_page
+    end = start + per_page
+    return items[start:end]
+
+@app.route('/tfidf')
+def tfidf():
     folder_tekstów = "teksty"
     wzorzec_pliku = r"(tekst_aei_\d+|wojna_zimowa_\d+)\.txt"
     wyniki_tfidf = oblicz_tfidf(folder_tekstów, wzorzec_pliku)
-    return render_template('frekwencja.html', wyniki=wyniki_tfidf)
+
+    page = request.args.get('page', default=1, type=int)
+    per_page = 10
+    total_pages = (len(wyniki_tfidf) + per_page - 1) // per_page
+
+    paginated_tfidf = paginate(wyniki_tfidf, page, per_page)
+
+    return render_template('tfidf.html',
+                           wyniki_tfidf=paginated_tfidf,
+                           page=page, total_pages=total_pages)
+
+@app.route('/lista_frekwencyjna')
+def lista_frekwencyjna():
+    folder_tekstów = "teksty"
+    wyniki_frekwencji = generate_frekwencja(folder_tekstów)
+
+    page = request.args.get('page', default=1, type=int)
+    per_page = 10
+    total_pages = (len(wyniki_frekwencji) + per_page - 1) // per_page
+
+    paginated_frekwencja = paginate(wyniki_frekwencji, page, per_page)
+
+    return render_template('lista_frekwencyjna.html',
+                           wyniki_frekwencji=enumerate(paginated_frekwencja, start=1),
+                           page=page, total_pages=total_pages)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=12121, debug=True)

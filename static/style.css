@@ -159,6 +159,89 @@ p {
     margin-right: 0;
 }
 
+.frekwencja-table {
+    margin: 20px auto;
+    border: 2px solid #275d8c;
+    border-collapse: collapse;
+    width: 90%;
+    font-size: 16px;
+    background-color: #ffffff;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.frekwencja-table th {
+    background-color: #275d8c;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+    border: 1px solid #ccc;
+}
+
+.frekwencja-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ccc;
+    color: #333333;
+    vertical-align: top;
+}
+
+.frekwencja-table tbody tr:nth-child(even) {
+    background-color: #f3f6fa;
+}
+
+.frekwencja-table tbody tr:hover {
+    background-color: #e9eef4;
+}
+
+.frekwencja-table caption {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #275d8c;
+}
+
+.frekwencja-table td {
+    font-size: 14px;
+}
+
+.frekwencja-table td:first-child {
+    font-weight: 600;
+    color: #2d61a6;
+}
+
+.frekwencja-table td:last-child {
+    font-weight: 500;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.page-link {
+    background-color: #275d8c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.page-link:hover {
+    background-color: #2d61a6;
+}
+
+.page-link[style*="none"] {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
 
 
 
