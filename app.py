@@ -2,9 +2,31 @@ import os
 from tfidf import oblicz_tfidf
 from frekwencja import generate_frekwencja
 from flask import Flask, render_template, request
+from collections import defaultdict
+from role_wagi import ROLES, WORDS
 
 #Flask instance
 app = Flask(__name__)
+
+
+def analyze_roles_in_text(content):
+    """Analizuje tekst i zwraca role oraz związane z nimi słowa."""
+    roles_found = defaultdict(list)
+    for role, words in WORDS.items():
+        for word in words:
+            if word in content:
+                roles_found[role].append(word)
+    return roles_found
+
+def highlight_text(content, roles_found):
+    """Podkreśla znalezione słowa w treści tekstu za pomocą znaczników <span>."""
+    for role, words in roles_found.items():
+        for word in words:
+            # Dodanie znacznika <span> z klasą dla roli
+            highlighted_word = f'<span class="{role}">{word}</span>'
+            content = content.replace(word, highlighted_word)
+    return content
+
 
 def load_texts(folder_path):
     texts = []
@@ -12,11 +34,17 @@ def load_texts(folder_path):
         if filename.endswith(".txt"):
             file_path = os.path.join(folder_path, filename)
             with open(file_path, "r", encoding="utf-8") as f:
+                content = f.read()
+                roles_in_text = analyze_roles_in_text(content)
+                highlighted_content = highlight_text(content, roles_in_text)
                 texts.append({
                     'title': f'Tekst {idx + 1}',
-                    'content': f.read()
+                    'content': highlighted_content,  # Zastąpiona treść
+                    'roles': roles_in_text
                 })
     return texts
+
+
 
 TEXT_FOLDER = 'teksty'
 
@@ -29,13 +57,15 @@ def teksty():
     texts = load_texts(TEXT_FOLDER)
     return render_template('teksty.html', texts=texts)
 
+
 @app.route('/formularz')
 def formularz():
-    return render_template('formularz.html')
+    return render_template('formularz.html', roles=ROLES, words=WORDS)
 
-@app.route('/tabela_wag')
+@app.route('/wagi')
 def wagi():
-    return render_template('wagi.html')
+    return render_template('wagi.html', roles=ROLES)
+
 
 
 def paginate(items, page, per_page=10):

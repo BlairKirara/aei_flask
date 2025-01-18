@@ -1,5 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+<h2>Role i ich wagi</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Rola</th>
+            <th>Waga</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for role, weight in roles.items() %}
+        <tr>
+            <td>{{ role.capitalize() }}</td>
+            <td>{{ weight }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
 {% endblock %}

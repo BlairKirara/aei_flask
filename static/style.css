@@ -59,6 +59,16 @@
     margin: 20px;
 }
 
+.content div{
+    color: #333333;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.text-list, .text-block {
+    padding: 20px 50px;
+}
+
 .content div h2 {
     font-size: 20px;
     font-weight: 600;
@@ -287,4 +297,12 @@ p {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+
+.sprawca { background-color: #FFD700; }  /* Złoty */
+.narzędzie { background-color: #FF4500; } /* Pomarańczowy */
+.obiekt { background-color: #1E90FF; }   /* Niebieski */
+.miejsce { background-color: #32CD32; }  /* Zielony */
+.zdarzenie { background-color: #8A2BE2; } /* Fioletowy */
+.cel { background-color: #FF69B4; }      /* Różowy */
+span { padding: 2px; border-radius: 4px; }
 

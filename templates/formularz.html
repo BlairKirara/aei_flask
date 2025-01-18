@@ -1,4 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<h2>Przypisane słowa do ról</h2>
+<div class="roles-container">
+    {% for role, words in words.items() %}
+    <div class="role-section">
+        <h3>{{ role.capitalize() }} (waga: {{ roles[role] }})</h3>
+        <p>Słowa przypisane do tej roli:</p>
+        <ul>
+            {% for word in words %}
+            <li>{{ word }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}

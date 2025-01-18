@@ -5,16 +5,20 @@
         {% for text in texts %}
         <div class="text-block">
             <h3>{{ text.title }}</h3>
-            <p class="short-text">{{ text.content[:200] }}...</p>
-            <p class="full-text" style="display: none;">{{  text.content }}</p>
+            <p class="short-text">{{ text.content[:200] | safe }}...</p>
+            <p class="full-text" style="display: none;">{{ text.content | safe }}</p>
             <button class="toggle-button">Czytaj więcej</button>
             <div class="roles">
-                <p><strong>Sprawca:</strong> [miejsce na rolę]</p>
-                <p><strong>Zdarzenie:</strong> [miejsce na rolę]</p>
-                <p><strong>Obiekt:</strong> [miejsce na rolę]</p>
-                <p><strong>Narzędzie:</strong> [miejsce na rolę]</p>
-                <p><strong>Miejsce:</strong> [miejsce na rolę]</p>
-                <p><strong>Cel:</strong> [miejsce na rolę]</p>
+                <h4>Znalezione role i słowa:</h4>
+                {% if text.roles %}
+                <ul>
+                    {% for role, words in text.roles.items() %}
+                    <li><strong>{{ role.capitalize() }}:</strong> {{ words | join(", ") }}</li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <p>Brak przypisanych ról w tym tekście.</p>
+                {% endif %}
             </div>
         </div>
         {% endfor %}
