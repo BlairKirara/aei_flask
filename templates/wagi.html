@@ -1,21 +1,27 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>Role i ich wagi</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Rola</th>
-            <th>Waga</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for role, weight in roles.items() %}
-        <tr>
-            <td>{{ role.capitalize() }}</td>
-            <td>{{ weight }}</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+    <h1>Wagi ról i kombinacji ról</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Rola/Kombinacja</th>
+                <th>Waga</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for roles, weight in roles_weights.items() %}
+            <tr>
+                <td>
+                    {% if roles is string %}
+                        {{ roles }}
+                    {% else %}
+                        {{ roles | join(", ") }}
+                    {% endif %}
+                </td>
+                <td>{{ weight }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 {% endblock %}

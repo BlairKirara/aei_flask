@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <div class="sort-buttons">
+        <a href="?sort=asc&by=weight" class="btn {% if sort_order == 'asc' and sort_by == 'weight' %}active{% endif %}">Sortuj po wadze (rosnąco)</a>
+        <a href="?sort=desc&by=weight" class="btn {% if sort_order == 'desc' and sort_by == 'weight' %}active{% endif %}">Sortuj po wadze (malejąco)</a>
+        <a href="?sort=asc&by=title" class="btn {% if sort_order == 'asc' and sort_by == 'title' %}active{% endif %}">Sortuj po nazwie (rosnąco)</a>
+        <a href="?sort=desc&by=title" class="btn {% if sort_order == 'desc' and sort_by == 'title' %}active{% endif %}">Sortuj po nazwie (malejąco)</a>
+    </div>
     <div class="text-list">
         {% for text in texts %}
         <div class="text-block">
@@ -16,6 +22,7 @@
                     <li><strong>{{ role.capitalize() }}:</strong> {{ words | join(", ") }}</li>
                     {% endfor %}
                 </ul>
+                <p><strong>Waga ról:</strong> {{ text.weight_display }}</p>
                 {% else %}
                 <p>Brak przypisanych ról w tym tekście.</p>
                 {% endif %}

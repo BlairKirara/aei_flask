@@ -8,7 +8,6 @@ from role_wagi import ROLES, WORDS
 #Flask instance
 app = Flask(__name__)
 
-
 def analyze_roles_in_text(content):
     """Analizuje tekst i zwraca role oraz związane z nimi słowa."""
     roles_found = defaultdict(list)
@@ -28,7 +27,21 @@ def highlight_text(content, roles_found):
     return content
 
 
-def load_texts(folder_path):
+def calculate_roles_weight(roles_found):
+    """Oblicza wagę na podstawie unikalnych znalezionych ról."""
+    # Pobieramy unikalne role jako posortowaną krotkę
+    unique_roles = tuple(sorted(roles_found.keys()))
+
+    # Przechodzimy przez klucze w ROLES, aby sprawdzić, czy są takie same
+    for key in ROLES:
+        if set(key) == set(unique_roles):  # Porównujemy zbiory ról
+            return ROLES[key]
+
+    # Jeśli nie znaleziono, zwracamy domyślną wartość
+    return "Brak przypisanej wagi"
+
+
+def load_texts(folder_path, sort_order="desc", sort_by="weight"):
     texts = []
     for idx, filename in enumerate(os.listdir(folder_path)):
         if filename.endswith(".txt"):
@@ -37,14 +50,30 @@ def load_texts(folder_path):
                 content = f.read()
                 roles_in_text = analyze_roles_in_text(content)
                 highlighted_content = highlight_text(content, roles_in_text)
+                weight = calculate_roles_weight(roles_in_text)
+
+                # Jeśli brak wagi, przypisz domyślną wartość (np. 0)
+                numeric_weight = weight if isinstance(weight, (int, float)) else 0
+
                 texts.append({
                     'title': f'Tekst {idx + 1}',
-                    'content': highlighted_content,  # Zastąpiona treść
-                    'roles': roles_in_text
+                    'content': highlighted_content,
+                    'roles': roles_in_text,
+                    'weight': numeric_weight,  # Używamy liczbowej wagi
+                    'weight_display': weight  # Oryginalna waga do wyświetlania
                 })
+
+    # Sortowanie tekstów
+    reverse = True if sort_order == "desc" else False
+
+    if sort_by == "title":
+        # Sortowanie po nazwie tekstu
+        texts.sort(key=lambda x: x['title'].lower(), reverse=reverse)
+    else:
+        # Sortowanie po wadze
+        texts.sort(key=lambda x: x['weight'], reverse=reverse)
+
     return texts
-
-
 
 TEXT_FOLDER = 'teksty'
 
@@ -52,11 +81,15 @@ TEXT_FOLDER = 'teksty'
 def index():
     return render_template('index.html')
 
+
 @app.route('/teksty')
 def teksty():
-    texts = load_texts(TEXT_FOLDER)
-    return render_template('teksty.html', texts=texts)
+    # Pobieranie parametrów sort_order (domyślnie malejąco) i sort_by (domyślnie po wadze)
+    sort_order = request.args.get('sort', 'desc')
+    sort_by = request.args.get('by', 'weight')
 
+    texts = load_texts(TEXT_FOLDER, sort_order=sort_order, sort_by=sort_by)
+    return render_template('teksty.html', texts=texts, sort_order=sort_order, sort_by=sort_by)
 
 @app.route('/formularz')
 def formularz():
@@ -64,7 +97,8 @@ def formularz():
 
 @app.route('/wagi')
 def wagi():
-    return render_template('wagi.html', roles=ROLES)
+    # Przekazujemy słownik ROLES, który zawiera wagi ról i ich kombinacji
+    return render_template('wagi.html', roles_weights=ROLES)
 
 
 
