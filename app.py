@@ -59,10 +59,14 @@ def tfidf():
                            wyniki_tfidf=paginated_tfidf,
                            page=page, total_pages=total_pages)
 
+
 @app.route('/lista_frekwencyjna')
 def lista_frekwencyjna():
     folder_tekstów = "teksty"
-    wyniki_frekwencji = generate_frekwencja(folder_tekstów)
+
+    # Pobieranie typu tekstów z parametrów URL, domyślnie 'war' (wojna zimowa)
+    tekst_type = request.args.get('type', default='war', type=str)
+    wyniki_frekwencji = generate_frekwencja(folder_tekstów, tekst_type)
 
     page = request.args.get('page', default=1, type=int)
     per_page = 10
@@ -72,7 +76,8 @@ def lista_frekwencyjna():
 
     return render_template('lista_frekwencyjna.html',
                            wyniki_frekwencji=enumerate(paginated_frekwencja, start=1),
-                           page=page, total_pages=total_pages)
+                           page=page, total_pages=total_pages, tekst_type=tekst_type)
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=12121, debug=True)

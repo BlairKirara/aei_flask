@@ -4,16 +4,27 @@ from clp3 import CLP
 from collections import defaultdict
 
 def load_texts(folder_path):
-    texts = []
+    texts_war = []  # Teksty o wojnie zimowej
+    texts_non_war = []  # Teksty nie o wojnie zimowej
+
     for idx, filename in enumerate(os.listdir(folder_path)):
         if filename.endswith(".txt"):
             file_path = os.path.join(folder_path, filename)
             with open(file_path, "r", encoding="utf-8") as f:
-                texts.append({
-                    'title': f'Tekst {idx + 1}',
-                    'content': f.read().lower()
-                })
-    return texts
+                # Rozdzielamy teksty na dwie grupy na podstawie nazwy pliku
+                if "wojna_zimowa" in filename.lower():  # Teksty o wojnie zimowej
+                    texts_war.append({
+                        'title': f'Tekst {idx + 1} (Wojna Zimowa)',
+                        'content': f.read().lower()
+                    })
+                else:  # Pozostałe teksty
+                    texts_non_war.append({
+                        'title': f'Tekst {idx + 1} (Inne)',
+                        'content': f.read().lower()
+                    })
+
+    return texts_war, texts_non_war
+
 
 def bform(clp_instance, slowo):
     try:
@@ -41,11 +52,17 @@ def is_pronoun(clp_instance, word):
         print(f"Nie udało się sprawdzić etykiety słowa '{word}': {e}")
     return False
 
-def generate_frekwencja(folder):
+def generate_frekwencja(folder, tekst_type='war'):
     clp_instance = CLP()
     word_count = defaultdict(int)
 
-    teksty = load_texts(folder)
+    # Ładowanie tekstów z folderu, uwzględniając typ tekstów (wojenne lub inne)
+    if tekst_type == 'war':
+        teksty_war, _ = load_texts(folder)
+        teksty = teksty_war
+    else:
+        _, teksty_non_war = load_texts(folder)
+        teksty = teksty_non_war
 
     for tekst in teksty:
         content = tekst['content']
@@ -60,5 +77,6 @@ def generate_frekwencja(folder):
 
     sorted_words = sorted(word_count.items(), key=lambda x: x[1], reverse=True)
     return sorted_words
+
 
 

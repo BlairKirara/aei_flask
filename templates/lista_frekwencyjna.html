@@ -1,8 +1,26 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <div class="type-selector-box">
+        <div class="text-type-header">
+            <span class="text-instruction">Typ tekstów:</span>
+            <div class="text-type-links">
+                <a href="{{ url_for('lista_frekwencyjna', type='war', page=1) }}" class="btn-text-link">Wojna Zimowa</a>
+                <a href="{{ url_for('lista_frekwencyjna', type='non_war', page=1) }}" class="btn-text-link">Inne Teksty</a>
+            </div>
+        </div>
+    </div>
+
+    {% if wyniki_frekwencji %}
     <table class="table frekwencja-table">
-        <caption>Lista Frekwencyjna</caption>
+        <caption>
+            Lista frekwencyjna -
+            {% if tekst_type == 'war' %}
+                wojna zimowa
+            {% else %}
+                inne teksty
+            {% endif %}
+        </caption>
         <thead>
             <tr>
                 <th>Ranking</th>
@@ -22,10 +40,11 @@
     </table>
 
     <div class="pagination">
-        <a href="{{ url_for('lista_frekwencyjna', page=1) }}" class="page-link">Pierwsza</a>
-        <a href="{{ url_for('lista_frekwencyjna', page=page - 1) }}" class="page-link" {% if page == 1 %}style="pointer-events: none; opacity: 0.5;"{% endif %}>←</a>
+        <a href="{{ url_for('lista_frekwencyjna', type=tekst_type, page=1) }}" class="page-link">Pierwsza</a>
+        <a href="{{ url_for('lista_frekwencyjna', type=tekst_type, page=page - 1) }}" class="page-link" {% if page == 1 %}style="pointer-events: none; opacity: 0.5;"{% endif %}>←</a>
         <span>{{ page }} / {{ total_pages }}</span>
-        <a href="{{ url_for('lista_frekwencyjna', page=page + 1) }}" class="page-link" {% if page == total_pages %}style="pointer-events: none; opacity: 0.5;"{% endif %}>→</a>
-        <a href="{{ url_for('lista_frekwencyjna', page=total_pages) }}" class="page-link">Ostatnia</a>
+        <a href="{{ url_for('lista_frekwencyjna', type=tekst_type, page=page + 1) }}" class="page-link" {% if page == total_pages %}style="pointer-events: none; opacity: 0.5;"{% endif %}>→</a>
+        <a href="{{ url_for('lista_frekwencyjna', type=tekst_type, page=total_pages) }}" class="page-link">Ostatnia</a>
     </div>
+    {% endif %}
 {% endblock %}

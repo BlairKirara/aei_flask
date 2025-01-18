@@ -56,7 +56,6 @@
 .content div{
     color: #333333;
     font-size: 18px;
-    padding: 20px 50px;
     margin: 20px;
 }
 
@@ -242,6 +241,50 @@ p {
     pointer-events: none;
 }
 
+.type-selector-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+.text-type-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+
+.text-instruction {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2d61a6;
+}
+
+.text-type-links {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-text-link {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #275d8c;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-text-link:hover {
+    background-color: #2d61a6;
+    transform: scale(1.05);
+}
+
+.btn-text-link:active {
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 
 
