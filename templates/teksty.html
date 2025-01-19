@@ -2,12 +2,12 @@
 
 {% block content %}
     <div class="sort-buttons">
-        <a href="?sort=asc&by=weight" class="btn {% if sort_order == 'asc' and sort_by == 'weight' %}active{% endif %}">Sortuj po wadze (rosnąco)</a>
-        <a href="?sort=desc&by=weight" class="btn {% if sort_order == 'desc' and sort_by == 'weight' %}active{% endif %}">Sortuj po wadze (malejąco)</a>
-        <a href="?sort=asc&by=title" class="btn {% if sort_order == 'asc' and sort_by == 'title' %}active{% endif %}">Sortuj po nazwie (rosnąco)</a>
-        <a href="?sort=desc&by=title" class="btn {% if sort_order == 'desc' and sort_by == 'title' %}active{% endif %}">Sortuj po nazwie (malejąco)</a>
+        <a href="?sort=asc&by=weight" class="sort-button btn {% if sort_order == 'asc' and sort_by == 'weight' %}active{% endif %}">Sortuj po wadze ⬆️</a>
+        <a href="?sort=desc&by=weight" class="sort-button btn {% if sort_order == 'desc' and sort_by == 'weight' %}active{% endif %}">Sortuj po wadze ⬇️</a>
+        <a href="?sort=asc&by=title" class="sort-button btn {% if sort_order == 'asc' and sort_by == 'title' %}active{% endif %}">Sortuj po nazwie ⬆️</a>
+        <a href="?sort=desc&by=title" class="sort-button btn {% if sort_order == 'desc' and sort_by == 'title' %}active{% endif %}">Sortuj po nazwie ⬇️ </a>
     </div>
-    <div class="text-list">
+     <div class="text-list">
         {% for text in texts %}
         <div class="text-block">
             <h3>{{ text.title }}</h3>
@@ -19,16 +19,19 @@
                 {% if text.roles %}
                     <ul>
                         {% for role, words in text.roles.items() %}
-                        <li><strong>{{ role.capitalize() }}:</strong> {{ words | join(", ") }}</li>
+                        <li><strong class="{{ role }}">{{ role.capitalize() }}:</strong> {{ words | join(", ") }}</li>
                         {% endfor %}
                     </ul>
-                    <p><strong>Waga ról:</strong> {{ text.weight_display }}</p>
+                    <p class="roles-weight">
+                        <span>Waga ról:</span>
+                        <span class="weight-background" data-weight="{{ text.weight | round(1) }}">{{ text.weight_display }}</span>
+                    </p>
+
                 {% else %}
-                    <p><strong>Waga ról:</strong> {{ text.weight_display }}</p>
+                    <p><strong>Waga ról: </strong><span class="weight-background" data-weight="0.1">0.1</span></p> <!-- Minimalna waga -->
                 {% endif %}
             </div>
         </div>
         {% endfor %}
     </div>
-
 {% endblock %}

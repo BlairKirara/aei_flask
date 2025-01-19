@@ -98,7 +98,7 @@ p {
     box-shadow: 1px 10px 5px rgb(177, 177, 177);
 }
 
-.toggle-button {
+.toggle-button, .sort-button {
     background-color: #275d8c;
     color: #ffffff;
     border: none;
@@ -110,7 +110,7 @@ p {
     transition: background-color 0.3s;
 }
 
-.toggle-button:hover {
+.toggle-button:hover, .sort-button:hover {
     background-color: #2d61a6;
 }
 
@@ -287,6 +287,22 @@ p {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+.sort-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #275d8c;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.sort-buttons {
+    text-align: center;
+    padding-top: 25px;
+}
+
 .btn-text-link:hover {
     background-color: #2d61a6;
     transform: scale(1.05);
@@ -306,3 +322,36 @@ p {
 .cel { background-color: #FF69B4; }      /* Różowy */
 span { padding: 2px; border-radius: 4px; }
 
+
+
+.roles-weight {
+    font-size: 1rem; /* Standardowy rozmiar tekstu */
+    margin: 5px 0; /* Lekki margines wokół wiersza */
+    color: black; /* Czarny kolor napisu */
+    line-height: 1.5; /* Przyjemna czytelność */
+}
+
+.roles-weight span {
+    display: inline; /* Wszystkie elementy w jednej linii */
+    margin: 0; /* Bez dodatkowego marginesu */
+    font-weight: bold;
+}
+
+.weight-background {
+    padding: 7px 10px; /* Minimum przestrzeni wokół wartości */
+    border-radius: 3px; /* Zaokrąglone narożniki */
+    font-weight: bold; /* Pogrubiona wartość */
+    background-color: #FF0000; /* Domyślny kolor, podmieniany przez `data-weight` */
+    color: black; /* Kontrastujący kolor tekstu */
+}
+
+.weight-background[data-weight="0.1"] { background-color: #FF0000; } /* Intensywny czerwony */
+.weight-background[data-weight="0.2"] { background-color: #FF3300; }
+.weight-background[data-weight="0.3"] { background-color: #FF6600; }
+.weight-background[data-weight="0.4"] { background-color: #FF9900; }
+.weight-background[data-weight="0.5"] { background-color: #FFCC00; } /* Pomarańczowy */
+.weight-background[data-weight="0.6"] { background-color: #CCFF00; }
+.weight-background[data-weight="0.7"] { background-color: #99FF00; }
+.weight-background[data-weight="0.8"] { background-color: #66FF00; }
+.weight-background[data-weight="0.9"] { background-color: #33FF00; }
+.weight-background[data-weight="1"] { background-color: #00FF00; } /* Intensywny zielony */
