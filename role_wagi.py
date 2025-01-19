@@ -97,14 +97,14 @@ ROLES = {
 }
 
 # wersja z niektórymi istotnymi nazwami własnymi, kótre były wysoko, z wyjątkiem "wojna" i "zimowy"
-WORDS= {
-    "sprawca": ["Finowie", "ZSRR", "armia", "żołnierz"],
-    "narzędzie": ["siła", "czołg", "atak"],
-    "obiekt": ["fiński", "radziecki", "sowiecki", "czerwony"],
-    "miejsce": ["Finlandia", "linia", "kraj"],
-    "zdarzenie": ["walka", "bitwa", "strata"],
-    "cel": ["zostać", "mieć", "móc", "obrona"]
-}
+# WORDS= {
+#     "sprawca": ["Finowie", "ZSRR", "armia", "żołnierz"],
+#     "narzędzie": ["siła", "czołg", "atak"],
+#     "obiekt": ["fiński", "radziecki", "sowiecki", "czerwony"],
+#     "miejsce": ["Finlandia", "linia", "kraj"],
+#     "zdarzenie": ["walka", "bitwa", "strata"],
+#     "cel": ["zostać", "mieć", "móc", "obrona"]
+# }
 
 #wybrane słowa z czołówki z pominięciem wszystkich nazw własnych (sowiecki, radziecki, finladnia, finowie, zsrr, sowieci, stalin)
 # WORDS= {
@@ -117,11 +117,11 @@ WORDS= {
 # }
 
 # wybrane słowa bliższe tematowi z top 100 słów, bez nazw własnych
-# WORDS= {
-#     "sprawca": ["żołnierz", "wojsko", "armia", "dywizja", "pułk", "oddział", "rząd"],
-#     "narzędzie": ["siła", "pozycja", "warunek"],
-#     "obiekt": ["jezioro", "linia", "czołg", "wojskowy"],
-#     "miejsce": ["kraj", "granica", "terytorium", "przesmyk"],
-#     "zdarzenie": ["walka", "konflikt", "bitwa", "strata"],
-#     "cel": ["obrona", "zwycięstwo", "atak"]
-# }
+WORDS= {
+    "sprawca": ["żołnierz", "wojsko", "armia", "dywizja", "pułk", "oddział", "rząd"],
+    "narzędzie": ["siła", "pozycja", "warunek"],
+    "obiekt": ["jezioro", "linia", "czołg", "wojskowy"],
+    "miejsce": ["kraj", "granica", "terytorium", "przesmyk"],
+    "zdarzenie": ["walka", "konflikt", "bitwa", "strata"],
+    "cel": ["obrona", "zwycięstwo", "atak"]
+}
