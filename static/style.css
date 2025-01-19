@@ -215,7 +215,6 @@ p {
 }
 
 .frekwencja-table td:first-child {
-    font-weight: 600;
     color: #2d61a6;
 }
 
@@ -314,14 +313,17 @@ p {
 }
 
 
-.sprawca { background-color: #FFD700; }  /* Złoty */
-.narzędzie { background-color: #FF4500; } /* Pomarańczowy */
-.obiekt { background-color: #1E90FF; }   /* Niebieski */
-.miejsce { background-color: #32CD32; }  /* Zielony */
-.zdarzenie { background-color: #8A2BE2; } /* Fioletowy */
-.cel { background-color: #FF69B4; }      /* Różowy */
+.sprawca { background-color: #c16161; }  /* Złoty */
+.narzędzie { background-color: #cf9269; } /* Pomarańczowy */
+.obiekt { background-color: #cab163; }   /* Niebieski */
+.miejsce { background-color: #8aba5c; }  /* Zielony */
+.zdarzenie { background-color: #585eb5; } /* Fioletowy */
+.cel { background-color: #9e5cb8; }      /* Różowy */
 span { padding: 2px; border-radius: 4px; }
 
+.nazwa-roli{
+    padding: 5px;
+}
 
 
 .roles-weight {
@@ -345,15 +347,15 @@ span { padding: 2px; border-radius: 4px; }
     color: black; /* Kontrastujący kolor tekstu */
 }
 
-.weight-background[data-weight="0.1"] { background-color: #FF0000; } /* Intensywny czerwony */
-.weight-background[data-weight="0.2"] { background-color: #FF3300; }
-.weight-background[data-weight="0.3"] { background-color: #FF6600; }
-.weight-background[data-weight="0.4"] { background-color: #FF9900; }
-.weight-background[data-weight="0.5"] { background-color: #FFCC00; } /* Pomarańczowy */
-.weight-background[data-weight="0.6"] { background-color: #CCFF00; }
-.weight-background[data-weight="0.7"] { background-color: #99FF00; }
-.weight-background[data-weight="0.8"] { background-color: #66FF00; }
-.weight-background[data-weight="0.9"] { background-color: #33FF00; }
+.weight-background[data-weight="0.1"], .weight-background[data-weight="0.15"] { background-color: #FF0000; } /* Intensywny czerwony */
+.weight-background[data-weight="0.2"], .weight-background[data-weight="0.25"]{ background-color: #FF3300; }
+.weight-background[data-weight="0.3"], .weight-background[data-weight="0.35"] { background-color: #FF6600; }
+.weight-background[data-weight="0.4"], .weight-background[data-weight="0.45"] { background-color: #FF9900; }
+.weight-background[data-weight="0.5"], .weight-background[data-weight="0.55"] { background-color: #FFCC00; } /* Pomarańczowy */
+.weight-background[data-weight="0.6"], .weight-background[data-weight="0.65"] { background-color: #CCFF00; }
+.weight-background[data-weight="0.7"], .weight-background[data-weight="0.75"] { background-color: #99FF00; }
+.weight-background[data-weight="0.8"], .weight-background[data-weight="0.85"] { background-color: #66FF00; }
+.weight-background[data-weight="0.9"], .weight-background[data-weight="0.95"] { background-color: #33FF00; }
 .weight-background[data-weight="1"] { background-color: #00FF00; } /* Intensywny zielony */
 
 .roles-container {
@@ -375,7 +377,7 @@ span { padding: 2px; border-radius: 4px; }
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: bold;
-    color: #2d61a6;
+    color: white;
 }
 
 .word-list {
@@ -393,4 +395,8 @@ span { padding: 2px; border-radius: 4px; }
     font-size: 15px;
     font-weight: 500;
     color: #2d61a6;
+}
+
+.introduction {
+    padding: 15px;
 }

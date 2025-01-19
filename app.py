@@ -168,7 +168,8 @@ def wagi():
 def paginate(items, page, per_page=10):
     start = (page - 1) * per_page
     end = start + per_page
-    return items[start:end]
+    return items[start:end], start
+
 
 @app.route('/tfidf')
 def tfidf():
@@ -199,11 +200,16 @@ def lista_frekwencyjna():
     per_page = 10
     total_pages = (len(wyniki_frekwencji) + per_page - 1) // per_page
 
-    paginated_frekwencja = paginate(wyniki_frekwencji, page, per_page)
+    # Paginacja: dane oraz offset
+    paginated_frekwencja, offset = paginate(wyniki_frekwencji, page, per_page)
 
-    return render_template('lista_frekwencyjna.html',
-                           wyniki_frekwencji=enumerate(paginated_frekwencja, start=1),
-                           page=page, total_pages=total_pages, tekst_type=tekst_type)
+    return render_template(
+        'lista_frekwencyjna.html',
+        wyniki_frekwencji=enumerate(paginated_frekwencja, start=offset + 1),
+        page=page,
+        total_pages=total_pages,
+        tekst_type=tekst_type
+    )
 
 
 if __name__ == '__main__':
