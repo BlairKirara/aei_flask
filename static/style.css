@@ -313,12 +313,12 @@ p {
 }
 
 
-.sprawca { background-color: #c16161; }  /* Złoty */
-.narzędzie { background-color: #cf9269; } /* Pomarańczowy */
-.obiekt { background-color: #cab163; }   /* Niebieski */
-.miejsce { background-color: #8aba5c; }  /* Zielony */
-.zdarzenie { background-color: #585eb5; } /* Fioletowy */
-.cel { background-color: #9e5cb8; }      /* Różowy */
+.sprawca { background-color: #c16161; }
+.narzędzie { background-color: #cf9269; }
+.obiekt { background-color: #cab163; }
+.miejsce { background-color: #8aba5c; }
+.zdarzenie { background-color: #585eb5; }
+.cel { background-color: #9e5cb8; }
 span { padding: 2px; border-radius: 4px; }
 
 .nazwa-roli{
@@ -327,49 +327,49 @@ span { padding: 2px; border-radius: 4px; }
 
 
 .roles-weight {
-    font-size: 1rem; /* Standardowy rozmiar tekstu */
-    margin: 5px 0; /* Lekki margines wokół wiersza */
-    color: black; /* Czarny kolor napisu */
-    line-height: 1.5; /* Przyjemna czytelność */
+    font-size: 1rem;
+    margin: 5px 0;
+    color: black;
+    line-height: 1.5;
 }
 
 .roles-weight span {
-    display: inline; /* Wszystkie elementy w jednej linii */
-    margin: 0; /* Bez dodatkowego marginesu */
+    display: inline;
+    margin: 0;
     font-weight: bold;
 }
 
 .weight-background {
-    padding: 7px 10px; /* Minimum przestrzeni wokół wartości */
-    border-radius: 3px; /* Zaokrąglone narożniki */
-    font-weight: bold; /* Pogrubiona wartość */
-    background-color: #FF0000; /* Domyślny kolor, podmieniany przez `data-weight` */
-    color: black; /* Kontrastujący kolor tekstu */
+    padding: 7px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: #FF0000;
+    color: black;
 }
 
-.weight-background[data-weight="0.1"], .weight-background[data-weight="0.15"] { background-color: #FF0000; } /* Intensywny czerwony */
+.weight-background[data-weight="0.1"], .weight-background[data-weight="0.15"] { background-color: #FF0000; }
 .weight-background[data-weight="0.2"], .weight-background[data-weight="0.25"]{ background-color: #FF3300; }
 .weight-background[data-weight="0.3"], .weight-background[data-weight="0.35"] { background-color: #FF6600; }
 .weight-background[data-weight="0.4"], .weight-background[data-weight="0.45"] { background-color: #FF9900; }
-.weight-background[data-weight="0.5"], .weight-background[data-weight="0.55"] { background-color: #FFCC00; } /* Pomarańczowy */
+.weight-background[data-weight="0.5"], .weight-background[data-weight="0.55"] { background-color: #FFCC00; }
 .weight-background[data-weight="0.6"], .weight-background[data-weight="0.65"] { background-color: #CCFF00; }
 .weight-background[data-weight="0.7"], .weight-background[data-weight="0.75"] { background-color: #99FF00; }
 .weight-background[data-weight="0.8"], .weight-background[data-weight="0.85"] { background-color: #66FF00; }
 .weight-background[data-weight="0.9"], .weight-background[data-weight="0.95"] { background-color: #33FF00; }
-.weight-background[data-weight="1"] { background-color: #00FF00; } /* Intensywny zielony */
+.weight-background[data-weight="1"] { background-color: #00FF00; }
 
 .roles-container {
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
-    background-color: #f7fbff; /* Jasne tło dla całej sekcji */
+    background-color: #f7fbff;
 }
 
 .role-section {
     margin-bottom: 20px;
     padding: 15px;
     border-bottom: 2px solid #e0e6ed;
-    background-color: #ffffff; /* Tło dla każdej roli */
+    background-color: #ffffff;
     border-radius: 5px;
 }
 

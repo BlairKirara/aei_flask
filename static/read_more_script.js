@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const shortText = textBlock.querySelector('.short-text');
             const fullText = textBlock.querySelector('.full-text');
 
-            if (fullText && shortText) {  // Upewnij się, że oba elementy istnieją
+            if (fullText && shortText) {
                 if (shortText.style.display === 'none') {
                     shortText.style.display = 'block';
                     fullText.style.display = 'none';

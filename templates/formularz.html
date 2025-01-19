@@ -5,7 +5,6 @@
     <h2 class="text-instruction">Przypisane słowa do ról:</h2>
     {% for role, words in words.items() %}
     <div class="role-section">
-        <!-- Dodajemy klasę CSS w zależności od roli -->
         <h3 class="{{ role }} nazwa-roli">{{ role.capitalize() }}</h3>
         <ul class="word-list">
             {% for word in words %}
