@@ -11,23 +11,24 @@
         {% for text in texts %}
         <div class="text-block">
             <h3>{{ text.title }}</h3>
-            <p class="short-text">{{ text.content[:200] | safe }}...</p>
-            <p class="full-text" style="display: none;">{{ text.content | safe }}</p>
+            <p class="short-text">{{ text.truncated_highlighted_content | safe }}</p>
+            <p class="full-text" style="display: none;">{{ text.highlighted_content | safe }}</p>
             <button class="toggle-button">Czytaj więcej</button>
             <div class="roles">
                 <h4>Znalezione role i słowa:</h4>
                 {% if text.roles %}
-                <ul>
-                    {% for role, words in text.roles.items() %}
-                    <li><strong>{{ role.capitalize() }}:</strong> {{ words | join(", ") }}</li>
-                    {% endfor %}
-                </ul>
-                <p><strong>Waga ról:</strong> {{ text.weight_display }}</p>
+                    <ul>
+                        {% for role, words in text.roles.items() %}
+                        <li><strong>{{ role.capitalize() }}:</strong> {{ words | join(", ") }}</li>
+                        {% endfor %}
+                    </ul>
+                    <p><strong>Waga ról:</strong> {{ text.weight_display }}</p>
                 {% else %}
-                <p>Brak przypisanych ról w tym tekście.</p>
+                    <p><strong>Waga ról:</strong> {{ text.weight_display }}</p>
                 {% endif %}
             </div>
         </div>
         {% endfor %}
     </div>
+
 {% endblock %}

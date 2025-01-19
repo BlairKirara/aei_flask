@@ -1,4 +1,5 @@
 ROLES = {
+    "nic": 0,
     "sprawca": 0.15,
     "narzędzie": 0.1,
     "obiekt": 0.1,
@@ -101,5 +102,5 @@ WORDS= {
     "obiekt": ["armia", "rok", "lata", "droga", "pierwsza", "państwo"],
     "miejsce": ["linia", "kraj", "granica", "front", "jezioro", "rejon"],
     "zdarzenie": ["walka", "dzień", "konflikt", "bitwa"],
-    "cel": ["atak", "zwycięstwo", "sukces", "cel"]
+    "cel": ["atak", "zwycięstwo", "sukces"]
 }
