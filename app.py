@@ -158,9 +158,11 @@ def formularz():
 
 @app.route('/wagi')
 def wagi():
-    # Przekazujemy słownik ROLES, który zawiera wagi ról i ich kombinacji
-    return render_template('wagi.html', roles_weights=ROLES)
+    # Przekształcamy ROLES na listę krotek i sortujemy po wartościach wag
+    sorted_roles_weights = sorted(ROLES.items(), key=lambda x: x[1])
 
+    # Możemy przekazać posortowaną listę do szablonu
+    return render_template('wagi.html', roles_weights=sorted_roles_weights)
 
 
 def paginate(items, page, per_page=10):

@@ -66,10 +66,13 @@ def generate_frekwencja(folder, tekst_type='war'):
 
     for tekst in teksty:
         content = tekst['content']
-        content = re.sub(r'[^\w\s]', ' ', content)
+        # Usuwanie znaków specjalnych i liczb
+        content = re.sub(r'[^\w\s]|[\d_]', ' ', content)
         words = content.split()
 
         for word in words:
+            if word.isdigit() or any(char.isdigit() for char in word):
+                continue  # Pomijamy cyfry lub słowa zawierające cyfry
             if is_pronoun(clp_instance, word):
                 continue
             base_form = bform(clp_instance, word)
@@ -77,6 +80,7 @@ def generate_frekwencja(folder, tekst_type='war'):
 
     sorted_words = sorted(word_count.items(), key=lambda x: x[1], reverse=True)
     return sorted_words
+
 
 
 

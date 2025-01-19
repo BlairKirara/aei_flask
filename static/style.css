@@ -355,3 +355,42 @@ span { padding: 2px; border-radius: 4px; }
 .weight-background[data-weight="0.8"] { background-color: #66FF00; }
 .weight-background[data-weight="0.9"] { background-color: #33FF00; }
 .weight-background[data-weight="1"] { background-color: #00FF00; } /* Intensywny zielony */
+
+.roles-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f7fbff; /* Jasne tło dla całej sekcji */
+}
+
+.role-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 2px solid #e0e6ed;
+    background-color: #ffffff; /* Tło dla każdej roli */
+    border-radius: 5px;
+}
+
+.role-section h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d61a6;
+}
+
+.word-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.word-item {
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: inline-block;
+    background-color: #e9eef4;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #2d61a6;
+}
