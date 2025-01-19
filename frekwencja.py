@@ -42,11 +42,12 @@ def is_pronoun(clp_instance, word):
         if ids:
             for id in ids:
                 label = clp_instance.label(id)
-                if label.startswith("E") or label.startswith("G"):  # "E" to typ zaimka
+                if label.startswith("E") or label.startswith("G"):
                     return True
     except Exception as e:
         print(f"Nie udało się sprawdzić etykiety słowa '{word}': {e}")
     return False
+
 
 def generate_frekwencja(folder, tekst_type='war'):
     clp_instance = CLP()
@@ -69,11 +70,17 @@ def generate_frekwencja(folder, tekst_type='war'):
                 continue
             if is_pronoun(clp_instance, word):
                 continue
+
             base_form = bform(clp_instance, word)
+
+            if ' ' in base_form or len(base_form) == 1:
+                continue
+
             word_count[base_form] += 1
 
     sorted_words = sorted(word_count.items(), key=lambda x: x[1], reverse=True)
     return sorted_words
+
 
 
 

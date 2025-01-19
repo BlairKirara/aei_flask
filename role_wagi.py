@@ -96,11 +96,32 @@ ROLES = {
     ("narzędzie", "obiekt", "miejsce", "zdarzenie", "cel", "sprawca"): 1
 }
 
+# wersja z niektórymi istotnymi nazwami własnymi, kótre były wysoko, z wyjątkiem "wojna" i "zimowy"
 WORDS= {
-    "sprawca": ["żołnierz", "dywizja", "wojsko", "korpus", "dowódca", "strona"],
-    "narzędzie": ["siła", "czołg", "pomoc", "bronić"],
-    "obiekt": ["armia", "rok", "lata", "droga", "pierwsza", "państwo"],
-    "miejsce": ["linia", "kraj", "granica", "front", "jezioro", "rejon"],
-    "zdarzenie": ["walka", "dzień", "konflikt", "bitwa"],
-    "cel": ["atak", "zwycięstwo", "sukces"]
+    "sprawca": ["Finowie", "ZSRR", "armia", "żołnierz"],
+    "narzędzie": ["siła", "czołg", "atak"],
+    "obiekt": ["fiński", "radziecki", "sowiecki", "czerwony"],
+    "miejsce": ["Finlandia", "linia", "kraj"],
+    "zdarzenie": ["walka", "bitwa", "strata"],
+    "cel": ["zostać", "mieć", "móc", "obrona"]
 }
+
+#wybrane słowa z czołówki z pominięciem wszystkich nazw własnych (sowiecki, radziecki, finladnia, finowie, zsrr, sowieci, stalin)
+# WORDS= {
+#     "sprawca": ["armia", "żołnierz", "dywizja", "wojsko"],
+#     "narzędzie": ["siła", "czołg", "atak"],
+#     "obiekt": ["czerwony", "dzień", "lata", "czas"],
+#     "miejsce": ["linia", "kraj", "granica"],
+#     "zdarzenie": ["walka", "bitwa", "strata"],
+#     "cel": ["zostać", "mieć", "móc", "obrona"]
+# }
+
+# wybrane słowa bliższe tematowi z top 100 słów, bez nazw własnych
+# WORDS= {
+#     "sprawca": ["żołnierz", "wojsko", "armia", "dywizja", "pułk", "oddział", "rząd"],
+#     "narzędzie": ["siła", "pozycja", "warunek"],
+#     "obiekt": ["jezioro", "linia", "czołg", "wojskowy"],
+#     "miejsce": ["kraj", "granica", "terytorium", "przesmyk"],
+#     "zdarzenie": ["walka", "konflikt", "bitwa", "strata"],
+#     "cel": ["obrona", "zwycięstwo", "atak"]
+# }

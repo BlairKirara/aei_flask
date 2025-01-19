@@ -3,7 +3,6 @@ import re
 import html
 from clp3 import clp
 from functools import lru_cache
-from tfidf import oblicz_tfidf
 from frekwencja import generate_frekwencja
 from flask import Flask, render_template, request
 from collections import defaultdict
@@ -151,24 +150,6 @@ def paginate(items, page, per_page=10):
     start = (page - 1) * per_page
     end = start + per_page
     return items[start:end], start
-
-
-@app.route('/tfidf')
-def tfidf():
-    folder_tekstów = "teksty"
-    wzorzec_pliku = r"(tekst_aei_\d+|wojna_zimowa_\d+)\.txt"
-    wyniki_tfidf = oblicz_tfidf(folder_tekstów, wzorzec_pliku)
-
-    page = request.args.get('page', default=1, type=int)
-    per_page = 10
-    total_pages = (len(wyniki_tfidf) + per_page - 1) // per_page
-
-    paginated_tfidf = paginate(wyniki_tfidf, page, per_page)
-
-    return render_template('tfidf.html',
-                           wyniki_tfidf=paginated_tfidf,
-                           page=page, total_pages=total_pages)
-
 
 @app.route('/lista_frekwencyjna')
 def lista_frekwencyjna():
