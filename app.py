@@ -2,6 +2,7 @@ import os
 import re
 import html
 from clp3 import clp
+from functools import lru_cache
 from tfidf import oblicz_tfidf
 from frekwencja import generate_frekwencja
 from flask import Flask, render_template, request
@@ -119,6 +120,10 @@ def load_texts(folder_path, sort_order="desc", sort_by="weight"):
 
 TEXT_FOLDER = 'teksty'
 
+@lru_cache(maxsize=2)
+def get_cached_frekwencja(folder, tekst_type):
+    return generate_frekwencja(folder, tekst_type)
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -168,9 +173,9 @@ def tfidf():
 @app.route('/lista_frekwencyjna')
 def lista_frekwencyjna():
     folder_tekstów = "teksty"
-
     tekst_type = request.args.get('type', default='war', type=str)
-    wyniki_frekwencji = generate_frekwencja(folder_tekstów, tekst_type)
+
+    wyniki_frekwencji = get_cached_frekwencja(folder_tekstów, tekst_type)
 
     page = request.args.get('page', default=1, type=int)
     per_page = 10
@@ -185,7 +190,6 @@ def lista_frekwencyjna():
         total_pages=total_pages,
         tekst_type=tekst_type
     )
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=12121, debug=True)
